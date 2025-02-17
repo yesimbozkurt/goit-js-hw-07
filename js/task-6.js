@@ -28,4 +28,8 @@ createBtn.addEventListener('click', event => {
     box.height += 10;
   }
   
-})
+});
+  destroyBtn.addEventListener('click', event => {
+    boxes.innerHTML = '';
+    input.value = '';
+  });
