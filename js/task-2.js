@@ -28,6 +28,8 @@ const gallery = document.querySelector('.gallery');
 images.forEach(image => {
   const galleyitem = document.createElement('li');
   const img = document.createElement('img');
+  img.setAttribute('width', '360');
+  img.setAttribute('height', '300');
   img.setAttribute('src', image.url);
   img.setAttribute('alt', image.alt);
   galleyitem.appendChild(img);

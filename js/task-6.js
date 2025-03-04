@@ -33,3 +33,7 @@ createBtn.addEventListener('click', event => {
     boxes.innerHTML = '';
     input.value = '';
   });
+
+  if (inputValue < 1 || inputValue > 100) {
+    return;
+  }
